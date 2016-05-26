@@ -1,0 +1,116 @@
+@function sqrt($r) {
+  $x0: 1;
+  $x1: $x0;
+
+  @for $i from 1 through 10 {
+    $x1: $x0 - ($x0 * $x0 - abs($r)) / (2 * $x0);
+    $x0: $x1;
+  }
+
+  @return $x1;
+}
+
+@mixin diamond-menu($_max_size) {
+  $_diameter_w_margin: $_max_size / 2;
+  $size: $_diameter_w_margin / ( sqrt(2) + ( sqrt(2) - 1 ) / 2 );
+
+  $margin: ($size * sqrt(2) - $size) / 2;
+  $diameter: $size * sqrt(2);
+
+  $spacing: $margin;
+
+  a.diamond {
+    display: inline-block;
+    transform: rotate(-45deg);
+    height: $size;
+    width: $size;
+    margin-top: $margin;
+    margin-left: $margin;
+    overflow: hidden;
+    box-shadow:
+      -2px 2px 6px 0 #ccc;
+    transition: box-shadow .4s ease-in-out;
+    &:hover {
+      box-shadow:
+        -6px 6px 12px 0 #ccc;
+    }
+    img {
+      height: 100%;
+      width: 100%;
+      transform: rotate(45deg) scale(1.5);
+    }
+  }
+
+  .diamond-menu_container {
+      display: flex;
+      height: 100%;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .diamond-menu {
+    position: relative;
+    width: $diameter * 2 + $spacing;
+    height: $diameter * 3/2 + $spacing * 3/2;
+    margin: 0 auto;
+    
+    a {
+      display: inline-block;
+      position: absolute;
+    }
+
+    a:nth-child(1) {
+      top: 0;
+      left: $diameter / 2 + $spacing / 2;
+    }
+    a:nth-child(2) {
+      top: $diameter / 2 + $spacing / 2;
+      left: 0;
+    }
+    a:nth-child(3) {
+      top: $diameter / 2 + $spacing / 2;
+      left: $diameter + $spacing;
+    }
+
+    // arrow from border pointing upwadrds
+    // span.diamond-spacer {
+    //   position: absolute;
+    //   display: inline-block;
+    //   border: solid transparent $spacing;
+    //   border-bottom: solid #ccc $spacing;
+    //   left: $diameter - $spacing / 2;
+    //   bottom: 0;
+    // }
+
+    span.diamond-spacer {
+        position: absolute;
+        display: inline-block;
+        line-height: 1;
+        width: $diameter;
+        height: $spacing / 2;
+        font-size: $spacing / 2;
+        left: $diameter / 2 + $spacing / 2;
+        bottom: 0;
+        text-align: center;
+    }
+  }
+
+}
+
+$size: 320;
+@while $size < 1920 {
+  @media screen and (min-width: $size + 0px) and (min-height: (3 * $size / 4) + 0px) {
+    @include diamond-menu($size - 40px);
+  }
+
+  $size: $size + $size / 2;
+}
+
+// @media screen and (min-width: 320px) and (min-height: 320px) {
+//   @include diamond-menu(320px);
+// }
+//
+// @media screen and (min-width: 640px) and (min-height: 640px) {
+//   @include diamond-menu(640px);
+// }

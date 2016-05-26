@@ -1,0 +1,11 @@
+email: mbochynski@wp.pl
+fullname: Mmm
+title: Administrator
+state: enabled
+access:
+  admin:
+    login: true
+    super: true
+  site:
+    login: true
+hashed_password: $2y$10$IZVjrFoF67jDh3hD2PD8tOKNKRPfVUY24/VK.HAj8TFIB10vVw5Iy
