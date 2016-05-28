@@ -258,7 +258,7 @@ b, strong, label, th {
       color: #fff; }
 
 html, body, button, input, select, textarea, .pure-g, .pure-g [class*="pure-u"] {
-  font-family: "Raleway", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  font-family: "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
   font-weight: 400; }
 
 h1, h2, h3, h4, h5, h6 {
@@ -311,7 +311,7 @@ h1 + h2 {
   font-size: 2rem;
   line-height: 1;
   text-align: center;
-  font-family: "Raleway", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  font-family: "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
   font-weight: 300; }
   @media only all and (min-width: 48em) and (max-width: 59.938em) {
     h1 + h2 {
@@ -325,7 +325,7 @@ h2 + h3 {
   font-size: 2rem;
   line-height: 1;
   text-align: center;
-  font-family: "Raleway", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  font-family: "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
   font-weight: 300; }
   @media only all and (min-width: 48em) and (max-width: 59.938em) {
     h2 + h3 {
