@@ -103,7 +103,7 @@ b, strong, label, th {
       font-size: 2rem;
       line-height: 2rem;
       margin: 0;
-      text-transform: uppercase; }
+      font-variant: small-caps; }
       #header #logo h3 a {
         color: #444; }
   #header #navbar {
