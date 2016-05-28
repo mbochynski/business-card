@@ -6,7 +6,7 @@ links:
     private: po-godzinach
 pics:
     me: IMGP3635ab_blur.jpg
-    work: miniIMGP8334.jpg
-    private: miniIMGP8340.jpg
+    work: code.png
+    private: gory.jpg
 ---
 

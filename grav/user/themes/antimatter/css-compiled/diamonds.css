@@ -8,10 +8,14 @@
     margin-left: 17.88354px;
     overflow: hidden;
     box-shadow: -2px 2px 6px 0 #ccc;
-    transition: box-shadow .4s ease-in-out; }
-    a.diamond:hover {
+    transition: box-shadow .4s ease-in-out;
+    background: black; }
+    a.diamond:hover, a.diamond:focus {
       box-shadow: -6px 6px 12px 0 #ccc; }
+      a.diamond:hover img, a.diamond:focus img {
+        opacity: 1; }
     a.diamond img {
+      opacity: .85;
       height: 100%;
       width: 100%;
       transform: rotate(45deg) scale(1.42); }
@@ -60,10 +64,14 @@
     margin-left: 28.10271px;
     overflow: hidden;
     box-shadow: -2px 2px 6px 0 #ccc;
-    transition: box-shadow .4s ease-in-out; }
-    a.diamond:hover {
+    transition: box-shadow .4s ease-in-out;
+    background: black; }
+    a.diamond:hover, a.diamond:focus {
       box-shadow: -6px 6px 12px 0 #ccc; }
+      a.diamond:hover img, a.diamond:focus img {
+        opacity: 1; }
     a.diamond img {
+      opacity: .85;
       height: 100%;
       width: 100%;
       transform: rotate(45deg) scale(1.42); }
@@ -112,10 +120,14 @@
     margin-left: 43.43146px;
     overflow: hidden;
     box-shadow: -2px 2px 6px 0 #ccc;
-    transition: box-shadow .4s ease-in-out; }
-    a.diamond:hover {
+    transition: box-shadow .4s ease-in-out;
+    background: black; }
+    a.diamond:hover, a.diamond:focus {
       box-shadow: -6px 6px 12px 0 #ccc; }
+      a.diamond:hover img, a.diamond:focus img {
+        opacity: 1; }
     a.diamond img {
+      opacity: .85;
       height: 100%;
       width: 100%;
       transform: rotate(45deg) scale(1.42); }
@@ -164,10 +176,14 @@
     margin-left: 66.42458px;
     overflow: hidden;
     box-shadow: -2px 2px 6px 0 #ccc;
-    transition: box-shadow .4s ease-in-out; }
-    a.diamond:hover {
+    transition: box-shadow .4s ease-in-out;
+    background: black; }
+    a.diamond:hover, a.diamond:focus {
       box-shadow: -6px 6px 12px 0 #ccc; }
+      a.diamond:hover img, a.diamond:focus img {
+        opacity: 1; }
     a.diamond img {
+      opacity: .85;
       height: 100%;
       width: 100%;
       transform: rotate(45deg) scale(1.42); }
@@ -216,10 +232,14 @@
     margin-left: 100.91427px;
     overflow: hidden;
     box-shadow: -2px 2px 6px 0 #ccc;
-    transition: box-shadow .4s ease-in-out; }
-    a.diamond:hover {
+    transition: box-shadow .4s ease-in-out;
+    background: black; }
+    a.diamond:hover, a.diamond:focus {
       box-shadow: -6px 6px 12px 0 #ccc; }
+      a.diamond:hover img, a.diamond:focus img {
+        opacity: 1; }
     a.diamond img {
+      opacity: .85;
       height: 100%;
       width: 100%;
       transform: rotate(45deg) scale(1.42); }
