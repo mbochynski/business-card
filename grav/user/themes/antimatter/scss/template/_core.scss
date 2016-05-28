@@ -1,5 +1,6 @@
 html, body {
 	height: 100% !important; // use !important to override slidebars.min.css
+  overflow-x: initial !important; // fix slidebars.min.css when using height 100%
 }
 
 body {

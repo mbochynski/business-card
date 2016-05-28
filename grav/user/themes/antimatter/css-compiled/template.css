@@ -16,7 +16,8 @@
     font-size: 0.9rem; }
 
 html, body {
-  height: 100% !important; }
+  height: 100% !important;
+  overflow-x: initial !important; }
 
 body {
   background: #fff;
@@ -43,7 +44,7 @@ b, strong, label, th {
 #body {
   background: #fff;
   padding-top: 8rem;
-  padding-bottom: 11rem; }
+  padding-bottom: 5rem; }
 
 .left {
   float: left; }
@@ -228,7 +229,7 @@ b, strong, label, th {
 #footer {
   position: absolute;
   background: #333;
-  height: 6rem;
+  height: 0;
   right: 0;
   bottom: 0;
   left: 0;
@@ -238,7 +239,7 @@ b, strong, label, th {
     color: #fff; }
   #footer .totop {
     position: absolute;
-    bottom: 5rem;
+    bottom: -1rem;
     text-align: center;
     left: 0;
     right: 0; }

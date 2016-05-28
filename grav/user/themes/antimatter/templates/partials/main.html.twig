@@ -1,45 +1,32 @@
-{% set theme_config = attribute(config.themes, config.system.pages.theme) %}
-<!DOCTYPE html>
-<html lang="{{ grav.language.getActive ?: theme_config.default_lang }}">
-<head>
+{% extends 'partials/base.html.twig' %}
 
-{% block head %}
-    <meta charset="utf-8" />
-    <title>{{ site.title|e('html') }}</title>
-    {% include 'partials/metadata.html.twig' %}
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link rel="icon" type="image/png" href="{{ url('theme://images/favicon.png', true) }}" />
-    <link rel="canonical" href="{{ page.url(true, true) }}" />
+{% set me = attribute(page.media.images, header.pics.me) %}
+{% set work = attribute(page.media.images, header.pics.work) %}
+{% set after_work = attribute(page.media.images, header.pics.private) %}
 
-    {% block stylesheets %}
-        {% do assets.addCss('theme://css-compiled/template.css',101) %}
-
-        {% do assets.addCss('theme://css/custom.css',100) %}
-        {% do assets.addCss('theme://css-compiled/diamonds.css', 104) %}
-
-    {% endblock %}
-    {{ assets.css() }}
-
-    {% block javascripts %}
-    {% endblock %}
-    {{ assets.js() }}
-
-{% endblock head%}
+{% block stylesheets %}
+  {{ parent() }}
+  {% do assets.addCss('theme://css-compiled/diamonds.css') %}
+{% endblock %}
+{% block header %}
+{% endblock %}
+{% block rawbody %}
 </head>
 <body id="top" class="{{ page.header.body_classes }}">
   <div class="diamond-menu_container">
     <div class="diamond-menu">
       <a class="diamond" href="{{ header.links.me }}">
-        <img src="http://csshexagon.com/img/meow.jpg"/>
+        {{ me.html() }}
       </a>
       <a class="diamond" href="{{ header.links.work }}">
-        <img src="http://csshexagon.com/img/meow.jpg"/>
+        {{ work.html() }}
       </a>
       <a class="diamond" href="{{ header.links.private }}">
-        <img src="http://csshexagon.com/img/meow.jpg"/>
+        {{ after_work.html() }}
       </a>
       <span class="diamond-spacer">&#x2663</span>
     </div>
   </div>
   </body>
 </html>
+{% endblock %}
