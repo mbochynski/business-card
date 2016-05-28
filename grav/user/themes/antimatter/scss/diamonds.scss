@@ -37,7 +37,7 @@
     img {
       height: 100%;
       width: 100%;
-      transform: rotate(45deg) scale(1.5);
+      transform: rotate(45deg) scale(1.42);
     }
   }
 
@@ -54,7 +54,7 @@
     width: $diameter * 2 + $spacing;
     height: $diameter * 3/2 + $spacing * 3/2;
     margin: 0 auto;
-    
+
     a {
       display: inline-block;
       position: absolute;
